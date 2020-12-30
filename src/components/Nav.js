@@ -4,8 +4,8 @@ import React,{useState,useEffect} from 'react';
 function Nav({number,setPage}) {
     const answers = [
         {solve:'어떠한',code:'password'},
-        {solve:'pp33pp44',code:'happynewyear'},
-        {solve:'오늘저녁은치킨이닭',code:'happynewyear'},
+        {solve:'pp33pp44',code:'comment'},
+        {solve:'noscript',code:'nonoscript'},
         {solve:'새해복많이받으세요',code:'happynewyear'},
     ]
     const [value,setValue]=useState('');
@@ -51,6 +51,7 @@ function Nav({number,setPage}) {
             Okay
           </a>
           :
+          (number !==3) &&
           <a
             className="App-link"
             onClick={()=>nextPage(1)}
@@ -58,6 +59,7 @@ function Nav({number,setPage}) {
           >
             Next
           </a>
+          
         }
         </div>
     )
