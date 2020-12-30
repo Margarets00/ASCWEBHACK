@@ -5,12 +5,28 @@
   src: url("Font/DungGeunMo.eot");
   src: url("Font/DungGeunMo.eot?#iefix") format(‘embedded-opentype’), url("Font/DungGeunMo.woff") format(‘woff’);
 }
-
+a {
+  cursor: pointer;
+}
+p {
+  word-break: keep-all;
+}
 html,
 body,
 * {
   font-family: "둥근모꼴", "DungGeunMo", DungGeunMo;
   margin: 0;
+}
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  outline: none;
+  color: #ffffff;
+  width: 100%;
+  height: 30px;
+  padding: 3px 5px;
+  font-size: 0.8em;
 }
 .App {
   text-align: center;
@@ -27,16 +43,18 @@ body,
   }
 }
 .App-header {
-  width: 50vw;
-  height: 50vh;
+  width: 60vw;
+  height: 60vh;
   border: 1px solid #ffffff;
   align-items: center;
   justify-content: space-evenly;
+  padding: 1em;
+  box-sizing: border-box;
 }
 .App {
   background-color: #000000;
   min-height: 100vh;
-  font-size: calc(15px + 2vmin);
+  font-size: calc(12px + 2vmin);
   color: white;
 }
 
@@ -75,6 +93,9 @@ body,
 .sm {
   height: 1.5em;
 }
+.sm-font {
+  font-size: 0.7em;
+}
 
 /* flex position */
 .flex {
@@ -91,15 +112,27 @@ body,
   justify-content: center;
 }
 .baseline {
-  align-items: baseline;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 /* div */
 
 .header {
   margin: 0 0 10px;
+  height: 20%;
 }
-
+.contents {
+  height: 100%;
+}
 .flag {
   margin-left: 10px;
+}
+.input-form {
+  margin: 0 0 1em 0;
+}
+.Nav {
+  justify-content: space-between;
+  width: 100%;
+  margin-top: auto;
 }
