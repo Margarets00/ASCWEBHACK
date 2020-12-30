@@ -54,7 +54,7 @@ input {
 .App {
   background-color: #000000;
   min-height: 100vh;
-  font-size: calc(12px + 2vmin);
+  font-size: calc(9px + 2vmin);
   color: white;
 }
 
@@ -128,11 +128,22 @@ input {
 .flag {
   margin-left: 10px;
 }
-.input-form {
-  margin: 0 0 1em 0;
+.hint {
+  font-size: 0.8em;
+  margin-bottom: 40px;
+}
+.hint span {
+  display: none;
+}
+.hint:hover span {
+  display: block;
+}
+.hint:hover p {
+  display: none;
 }
 .Nav {
   justify-content: space-between;
   width: 100%;
   margin-top: auto;
+  align-items: flex-end;
 }
