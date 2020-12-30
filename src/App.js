@@ -3,8 +3,8 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="App flex flex-center">
+      <header className="App-header flex column flex-center">
         <div className="header flex row baseline">
         <p>
           ASC WEBHACK
