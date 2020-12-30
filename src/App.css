@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "DungGeunMo";
+  font-style: normal;
+  font-weight: normal;
+  src: url("Font/DungGeunMo.eot");
+  src: url("Font/DungGeunMo.eot?#iefix") format(‘embedded-opentype’), url("Font/DungGeunMo.woff") format(‘woff’);
+}
+
+html,
+body,
+* {
+  font-family: "둥근모꼴", "DungGeunMo", DungGeunMo;
+  margin: 0;
+}
 .App {
   text-align: center;
 }
@@ -13,8 +27,8 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
+.App {
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,6 +42,23 @@
   color: #61dafb;
 }
 
+/*animation*/
+
+.blink {
+  animation: blink-animation 2s steps(2, start) infinite;
+  -webkit-animation: blink-animation 2s steps(2, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +66,33 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Size */
+
+.sm {
+  height: 1.5em;
+}
+
+/* flex position */
+.flex {
+  display: flex;
+}
+.row {
+  flex-direction: row;
+}
+.flex-justify-center {
+}
+.baseline {
+  align-items: baseline;
+}
+
+/* div */
+
+.header {
+  margin: 0 0 10px;
+}
+
+.flag {
+  margin-left: 10px;
 }
