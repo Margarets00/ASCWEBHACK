@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "DungGeunMo";
+  font-style: normal;
+  font-weight: normal;
+  src: url("font/DungGeunMo.eot");
+  src: url("font/DungGeunMo.eot?#iefix") format(‘embedded-opentype’), url("font/DungGeunMo.woff") format(‘woff’),
+    url("font/DungGeunMo.woff2") format(‘woff’), url("font/DungGeunMo.ttf") format(ttf), url("font/DungGeunMo.otf") format(otf);
+}
+html,
+body,
+* {
+  font-family: "둥근모꼴", "DungGeunMo", DungGeunMo;
+  margin: 0;
+}
