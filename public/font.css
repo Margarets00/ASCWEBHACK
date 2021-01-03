@@ -4,7 +4,7 @@
   font-weight: normal;
   src: url("font/DungGeunMo.eot");
   src: url("font/DungGeunMo.eot?#iefix") format(‘embedded-opentype’), url("font/DungGeunMo.woff") format(‘woff’),
-    url("font/DungGeunMo.woff2") format(‘woff’), url("font/DungGeunMo.ttf") format(ttf), url("font/DungGeunMo.otf") format(otf);
+    url("font/DungGeunMo.woff2") format(‘woff2’), url("font/DungGeunMo.ttf") format(truetype), url("font/DungGeunMo.otf") format(otf);
 }
 html,
 body,

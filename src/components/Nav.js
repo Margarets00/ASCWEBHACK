@@ -39,7 +39,7 @@ function Nav({number,setPage}) {
             {!correct?
                 <input type="text" value={value} onChange={(e)=>setValue(e.target.value)} placeholder="put answer here"/>
               :
-              <p className="App-link">Corrected! The Code is {answers[number].code}</p>
+              <p className="App-link">Correct! FLAG : {answers[number].code}</p>
             }
         </div>
         {!correct?
