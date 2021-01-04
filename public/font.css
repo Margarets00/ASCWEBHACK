@@ -2,8 +2,8 @@
   font-family: "DungGeunMo";
   font-style: normal;
   font-weight: normal;
-  src: url("font/DungGeunMo.eot?#iefix") format(‘embedded-opentype’), url("font/DungGeunMo.woff") format(‘woff’),
-    url("font/DungGeunMo.woff2") format(‘woff2’), url("font/DungGeunMo.ttf") format(truetype), url("font/DungGeunMo.otf") format(otf);
+  src: url("font/DungGeunMo.eot?#iefix") format("embedded-opentype"), url("font/DungGeunMo.woff") format("woff"),
+    url("font/DungGeunMo.woff2") format("woff2"), url("font/DungGeunMo.ttf") format(truetype), url("font/DungGeunMo.otf") format(otf);
 }
 html,
 body,
