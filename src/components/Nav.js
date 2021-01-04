@@ -3,10 +3,10 @@ import React,{useState,useEffect} from 'react';
 
 function Nav({number,setPage}) {
     const answers = [
-        {solve:'어떠한',code:'password'},
-        {solve:'pp33pp44',code:'comment'},
-        {solve:'noscript',code:'nonoscript'},
-        {solve:'새해복많이받으세요',code:'happynewyear'},
+      {solve:'어떠한',code:'Password'},
+      {solve:'1q2w3e4r',code:'Comments'},
+      {solve:'새해복많이받으세요',code:'HappYear'},
+      {solve:'baNaNa',code:'WellDone'},
     ]
     const [value,setValue]=useState('');
     const [correct,setCorrect]=useState(false);
