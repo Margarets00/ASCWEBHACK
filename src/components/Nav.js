@@ -51,7 +51,7 @@ function Nav({number,setPage}) {
             Okay
           </a>
           :
-          (number !==3) &&
+          (number !==answers.length-1) &&
           <a
             className="App-link"
             onClick={()=>nextPage(1)}
