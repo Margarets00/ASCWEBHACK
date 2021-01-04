@@ -1,7 +1,7 @@
 
 import React,{useState,useEffect} from 'react';
 
-function Nav({number,setPage}) {
+function Nav({number,setPage,problems}) {
     const answers = [
       {solve:'어떠한',code:'Password'},
       {solve:'1q2w3e4r',code:'Comments'},
@@ -30,7 +30,7 @@ function Nav({number,setPage}) {
             setCorrect(true);
         }
         else{
-          alert('[Problem '+number+'. '+answers[number].solve+']\n'+value + ' is wrong answer!')
+          alert('[Problem '+number+'. '+problems+']\n'+value + ' is wrong answer!')
         }
     }
     return (

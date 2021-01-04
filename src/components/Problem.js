@@ -25,7 +25,7 @@ function Problems({number,setPage}){
             <span>{problems[number].hint}</span>
         </div>
         
-        <Nav number={number} setPage={setPage}/>
+        <Nav number={number} problems={problems[number].header} setPage={setPage}/>
         </>
     )
 
