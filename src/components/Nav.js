@@ -20,11 +20,18 @@ function Nav({number,setPage}) {
         setValue('');
         setCorrect(false);
     }
+    function enterSubmit(e){
+      if (e.keyCode === 13) {
+        checkAnswer(value)
+      }
+    }
     function checkAnswer(value) {
         if(value===answers[number].solve){
             setCorrect(true);
         }
-
+        else{
+          alert('[Problem '+number+'. '+answers[number].solve+']\n'+value + ' is wrong answer!')
+        }
     }
     return (
         <div className="Nav flex row">
@@ -37,7 +44,7 @@ function Nav({number,setPage}) {
           </a>
           <div className="flex row input-form">
             {!correct?
-                <input type="text" value={value} onChange={(e)=>setValue(e.target.value)} placeholder="put answer here"/>
+                <input type="text" value={value} onKeyDown={(e) => enterSubmit(e) } onChange={(e)=>setValue(e.target.value)} placeholder="put answer here"/>
               :
               <p className="App-link">Correct! FLAG : {answers[number].code}</p>
             }
