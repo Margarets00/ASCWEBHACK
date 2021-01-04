@@ -15,7 +15,7 @@ function Problems({number,setPage}){
         </p>
         </div>
         <div className="contents flex flex-center">
-            {number===1&&<div className="비밀번호 수첩" dangerouslySetInnerHTML={{__html: "<!--문제 1번의 정답은 Comments -->"}}></div>}
+            {number===1&&<div className="비밀번호 수첩" dangerouslySetInnerHTML={{__html: "<!--Problem 1's answer  = 1q2w3e4r-->"}}></div>}
         <p className='sm-font'>
             {problems[number].contents}
         </p>
